@@ -1,3 +1,22 @@
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptatem expedita iure, laborum facilis,
-      asperiores ut porro optio magnam unde doloribus dolorem beatae fugiat et praesentium autem dolores eum quod.
-    </p>
+<!--
+<ul>
+  <li *ngFor="let resultado of resultados">
+    {{resultado.title}}
+
+  </li>
+</ul> -->
+
+<div class="row">
+  <div *ngFor="let gif of resultados" class=" col-md-4 col-sm-6">
+    <div class="card">
+      <img src="gif.images.downsized.url" alt="resultado.title">
+      <div class="card-body">
+        <p class="card-text">
+
+
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
