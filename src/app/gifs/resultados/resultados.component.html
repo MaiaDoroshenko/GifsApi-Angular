@@ -9,10 +9,12 @@
 <div class="row">
   <div *ngFor="let gif of resultados" class=" col-md-4 col-sm-6">
     <div class="card">
-      <img src="gif.images.downsized.url" alt="resultado.title">
+    <img [src]="gif.images.downsized_medium.url"
+         [alt]="gif.title"
+         class="card-image-top">
       <div class="card-body">
         <p class="card-text">
-
+{{gif.title}}
 
         </p>
       </div>
